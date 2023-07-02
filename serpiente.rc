@@ -1,0 +1,68 @@
+#include "serpiente.h"
+
+MAINMENU MENU
+{
+	POPUP "Archivo"
+	{
+		MENUITEM "Nuevo Juego", IDM_NUEVO
+		MENUITEM "Estadisticas", IDM_STATS
+		MENUITEM "Informacion", IDM_INFO
+		MENUITEM "Salir", IDM_SALIR
+	}
+	POPUP "Personalizacion"
+	{
+		POPUP "Fondo"{
+			MENUITEM "Claro", IDM_MODO_C
+			MENUITEM "Oscuro", IDM_MODO_O
+			MENUITEM "Azul", IDM_MODO_A
+		}
+		POPUP "Serpiente"{
+			POPUP "Cuerpo"{
+				MENUITEM "Blanco", PS_CUERPO_BLANCO
+				MENUITEM "Negro", PS_CUERPO_NEGRO
+				MENUITEM "Azul", PS_CUERPO_AZUL
+				MENUITEM "Rojo", PS_CUERPO_ROJO
+				MENUITEM "Verde", PS_CUERPO_VERDE
+				MENUITEM "Amarillo", PS_CUERPO_AMARILLO
+				MENUITEM "Morado", PS_CUERPO_MORADO
+			}
+			POPUP "Cola"{
+				MENUITEM "Blanco", PS_COLA_BLANCO
+				MENUITEM "Negro", PS_COLA_NEGRO
+				MENUITEM "Azul", PS_COLA_AZUL
+				MENUITEM "Rojo", PS_COLA_ROJO
+				MENUITEM "Verde", PS_COLA_VERDE
+				MENUITEM "Amarillo", PS_COLA_AMARILLO
+				MENUITEM "Morado", PS_COLA_MORADO
+			}
+			POPUP "Lengua"{
+				MENUITEM "Blanco", PS_LENGUA_BLANCO
+				MENUITEM "Negro", PS_LENGUA_NEGRO
+				MENUITEM "Azul", PS_LENGUA_AZUL
+				MENUITEM "Rojo", PS_LENGUA_ROJO
+				MENUITEM "Verde", PS_LENGUA_VERDE
+				MENUITEM "Amarillo", PS_LENGUA_AMARILLO
+				MENUITEM "Morado", PS_LENGUA_MORADO
+			}
+			POPUP "Cabeza"{
+				MENUITEM "Blanco", PS_CABEZA_BLANCO
+				MENUITEM "Negro", PS_CABEZA_NEGRO
+				MENUITEM "Azul", PS_CABEZA_AZUL
+				MENUITEM "Rojo", PS_CABEZA_ROJO
+				MENUITEM "Verde", PS_CABEZA_VERDE
+				MENUITEM "Amarillo", PS_CABEZA_AMARILLO
+				MENUITEM "Morado", PS_CABEZA_MORADO
+			}
+		}
+		POPUP "Enemigo"{
+				MENUITEM "Verde Bosque", PS_ENEMIGO_VERDEBOSQUE
+				MENUITEM "Naranja", PS_ENEMIGO_NARANJA
+				MENUITEM "Marron", PS_ENEMIGO_MARRON
+				MENUITEM "Violeta", PS_ENEMIGO_VIOLETA
+		}
+	}
+	POPUP "Musica"
+	{
+		MENUITEM "Musica", IDM_MUSIC
+	}
+}
